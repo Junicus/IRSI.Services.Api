@@ -12,7 +12,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using IRSI.Services.Api.Configuration.SOSServiceBusService;
-using IRSI.Services.Data;
 using IRSI.Services.Api.Data;
 using IRSI.Services.Api.Configuration;
 using IRSI.Services.Api.Services;

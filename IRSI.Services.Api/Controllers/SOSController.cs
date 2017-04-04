@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using IRSI.Services.Api.Security.Requirements;
-using IRSI.Services.Data;
 using Microsoft.AspNetCore.Authorization;
 using IRSI.Services.Api.Data;
 using Microsoft.AspNetCore.Hosting;
