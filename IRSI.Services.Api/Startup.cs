@@ -28,6 +28,12 @@ namespace IRSI.Services.Api
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
+
+            if (env.IsDevelopment())
+            {
+                builder.AddUserSecrets<Startup>();
+            }
+
             Configuration = builder.Build();
         }
 
@@ -54,7 +60,7 @@ namespace IRSI.Services.Api
 
                 options.AddPolicy("CanCallTeam", pa =>
                 {
-                    pa.RequireClaim("teampApiEvent", "true");
+                    pa.RequireClaim("teamApiEvent", "true");
                 });
             });
 
